@@ -1,0 +1,108 @@
+.products {
+  padding: 100px 0px;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 26px;
+    &__title {
+      color: #22262a;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 52px;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #22262a;
+    &.active {
+      color: #33a0ff;
+      text-decoration: underline;
+    }
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  &__card {
+    width: 300px;
+    position: relative;
+    transition: all 500ms;
+  }
+  &__img {
+    width: 100%;
+    height: 272px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  &__h3 {
+    margin-top: 0px;
+    width: 60px;
+    margin-left: 0;
+    padding: 5px 15px;
+    background-color: #ff4858;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    border-radius: 2px;
+  }
+  &__title {
+    color: #223263;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  &__text {
+    color: #22262a;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 5px 0px;
+  }
+  &__rating {
+    color: #ffc600;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  &__hover {
+    width: 100%;
+    height: 75%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 0;
+    position: absolute;
+    transition: all 500ms;
+    background-color: #ffffff;
+    opacity: 0;
+  }
+}
+.products__card:hover .products__hover {
+  opacity: 1;
+  z-index: 10;
+}

@@ -1,0 +1,54 @@
+.brends {
+  margin-top: -100px;
+  padding-bottom: 60px;
+  &__info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__card {
+    position: relative;
+    width: 420px;
+    height: 358px;
+    object-fit: contain;
+    padding: 40px 50px;
+    border-radius: 5px;
+    &:nth-child(1) {
+      background: url(../assets/images/brends-1.png) no-repeat center/cover;
+    }
+    &:nth-child(2) {
+      background: url(../assets/images/brends-2.png) no-repeat center/cover;
+    }
+    &:nth-child(3) {
+      background: url(../assets/images/brends-3.png) no-repeat center/cover;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #223263;
+    max-width: 200px;
+    margin-bottom: 200px;
+  }
+  &__text {
+    color: #9098b1;
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  &__strong {
+    color: #fb7181;
+    text-decoration: none;
+  }
+  &__h3 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #40bfff;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+  }
+}

@@ -1,0 +1,35 @@
+.adidas {
+  padding: 162px 0px;
+  background-color: #40bfff;
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    max-width: 571px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 82px;
+    margin-bottom: 23px;
+  }
+  &__text {
+    max-width: 592px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    height: 36px;
+    margin-bottom: 12px;
+  }
+  &__img {
+    max-width: 590px;
+    margin-top: -250px;
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+}

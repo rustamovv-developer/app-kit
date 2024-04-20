@@ -1,0 +1,17 @@
+.header {
+  height: 650px;
+  background: url(../assets/images/header-bg.png) no-repeat center/cover;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    margin-top: 250px;
+    max-width: 570px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+  }
+}
