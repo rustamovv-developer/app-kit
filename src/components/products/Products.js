@@ -20,7 +20,7 @@ function Products() {
   let products = data?.data?.products?.map((el) => (
     <div key={el.id} className="products__card">
       <h3 className="products__h3">{el.id}</h3>
-      <Link to={`/like/${el.id}`}>
+      <Link to={""}>
         <img
           src={el.images[0]}
           alt="products__image"
@@ -31,7 +31,12 @@ function Products() {
       <h4 className="products__rating">{el.rating}</h4>
       <p className="products__text">{el.description}</p>
       <div className="products__hover">
-        <Link onClick={handleLike} to={`/like`}>
+        <Link
+          to={`/like/${el.id}`}
+          onClick={() => {
+            dispatch(addToLike(el));
+          }}
+        >
           <img src={img1} alt="img" className="products__like" />
         </Link>
         <img src={img2} alt="img" className="products__like" />
